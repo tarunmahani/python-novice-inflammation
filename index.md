@@ -93,6 +93,7 @@ To do all that, we'll have to learn a little bit about programming.
 4b. [Reading/Writing CSV files without numpy](04b-readwrite.html)
 5.  [Making Choices](05-cond.html)
 6.  [Creating Functions](06-func.html)
+6b. [Write a Literature Manager](06b-literature-manager.html)
 7.  [Errors and Exceptions](07-errors.html)
 8.  [Defensive Programming](08-defensive.html)
 9.  [Debugging](09-debugging.html)
