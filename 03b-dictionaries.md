@@ -21,6 +21,7 @@ Accessing the values of a dictionary is similar to accessing a given position in
 
 
     ---------------------------------------------------------------------------
+
     KeyError                                  Traceback (most recent call last)
 
     <ipython-input-2-e059547cb67b> in <module>()
@@ -64,8 +65,8 @@ By default the loop will iterate over the keys.
 
     1.0
     2
-    list
     another_dictionary?
+    list
 
 
 Often you want to have both, the key and value at the same time. For this you can use the dictionary function `.items()`: 
@@ -74,31 +75,34 @@ Often you want to have both, the key and value at the same time. For this you ca
     for key,value in example_dictionary.items():
         print(key,value)
 
-    (1.0, '1,0')
-    (2, 1)
-    ('list', ['yes', 'this', 'is', 'possible'])
-    ('another_dictionary?', {'yes': 'that', 'works': 'as well'})
+    1.0 1,0
+    2 1
+    another_dictionary? {'yes': 'that', 'works': 'as well'}
+    list ['yes', 'this', 'is', 'possible']
 
 
 ## Questions / Tasks
 
 * How does your dictionary look like when you fill it like this: `dictionary = {1.0 = "a", 1="b"}`?
-* You have two files, `data/merge-1.csv` and `data/merge-2.csv`. Each line in the file looks like this: 
 
-File 1
+* You have two dictionaries, `shopping_list` and `prices`. Use it to calculate the total cost of your shopping trip.
+
 ```
-patient_a,1,0,2,3,4
-patient_b,2,3,1,0,23
-…
-```
-File 2
-```
-patient_c,3,0,1,1,2
-patient_a,4,5,3,0,2
-…
+shopping_list = {"banana":2,
+    "apple": 4,
+    "orange": 1,
+    "pear": 3
+    "chocolate": 1}
 ```
 
-Each patient is represented in both files, but they are not ordered. You want to merge the data for each patient from the two files into a single one and save the output.
+```
+prices = { "banana":0.39,
+    "apple": 0.20,
+    "orange": 0,30,
+    "pear":0.20,
+    "chocolate":0.90
+    }
+```
 
 
     

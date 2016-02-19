@@ -20,7 +20,7 @@ Since Python 3 there is also `x` as a possible mode, which writes to a file only
 
     FileExistsError                           Traceback (most recent call last)
 
-    <ipython-input-2-73e8b8c4ffe8> in <module>()
+    <ipython-input-17-73e8b8c4ffe8> in <module>()
           1 file_to_append = open("data/inflammation-new.csv","a") # append
     ----> 2 file_to_write = open("data/inflammation-new.csv","x") # write if not existing
     
@@ -142,7 +142,7 @@ Ok, this worked just fine. But what happens if we try to write one of our proces
 
     TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-25-b1ccf2d7b74e> in <module>()
+    <ipython-input-27-b1ccf2d7b74e> in <module>()
           1 processed_line = [0.0, 0.0, 1.0]
           2 file_to_write = open("data/inflammation-new.csv","w")
     ----> 3 file_to_write.write(processed_line)
@@ -189,9 +189,22 @@ To convert a list into a comma-separated string we can use the `join()` function
     for line in my_file:
         print(line)
 
-    0,0,1
-    
+* You have two files, `data/merge-1.csv` and `data/merge-2.csv`. Each line in the file looks like this: 
 
+File 1
+```
+patient_a,1,0,2,3,4
+patient_b,2,3,1,0,23
+…
+```
+File 2
+```
+patient_c,3,0,1,1,2
+patient_a,4,5,3,0,2
+…
+```
+
+Each patient is represented in both files, but they are not ordered. You want to merge the data for each patient from the two files into a single one and save the output.
 
 
     

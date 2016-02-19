@@ -378,8 +378,8 @@ div#notebook {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>1.0
 2
-list
 another_dictionary?
+list
 </pre>
 </div>
 </div>
@@ -417,10 +417,10 @@ another_dictionary?
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1.0, &apos;1,0&apos;)
-(2, 1)
-(&apos;list&apos;, [&apos;yes&apos;, &apos;this&apos;, &apos;is&apos;, &apos;possible&apos;])
-(&apos;another_dictionary?&apos;, {&apos;yes&apos;: &apos;that&apos;, &apos;works&apos;: &apos;as well&apos;})
+<pre>1.0 1,0
+2 1
+another_dictionary? {&apos;yes&apos;: &apos;that&apos;, &apos;works&apos;: &apos;as well&apos;}
+list [&apos;yes&apos;, &apos;this&apos;, &apos;is&apos;, &apos;possible&apos;]
 </pre>
 </div>
 </div>
@@ -444,20 +444,24 @@ another_dictionary?
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>How does your dictionary look like when you fill it like this: <code>dictionary = {1.0 = "a", 1="b"}</code>?</li>
-<li>You have two files, <code>data/merge-1.csv</code> and <code>data/merge-2.csv</code>. Each line in the file looks like this: </li>
+<li><p>How does your dictionary look like when you fill it like this: <code>dictionary = {1.0 = "a", 1="b"}</code>?</p>
+</li>
+<li><p>You have two dictionaries, <code>shopping_list</code> and <code>prices</code>. Use it to calculate the total cost of your shopping trip.</p>
+</li>
 </ul>
-<p>File 1</p>
 
-<pre><code>patient_a,1,0,2,3,4
-patient_b,2,3,1,0,23
-…</code></pre>
-<p>File 2</p>
+<pre><code>shopping_list = {"banana":2,
+    "apple": 4,
+    "orange": 1,
+    "pear": 3
+    "chocolate": 1}</code></pre>
 
-<pre><code>patient_c,3,0,1,1,2
-patient_a,4,5,3,0,2
-…</code></pre>
-<p>Each patient is represented in both files, but they are not ordered. You want to merge the data for each patient from the two files into a single one and save the output.</p>
+<pre><code>prices = { "banana":0.39,
+    "apple": 0.20,
+    "orange": 0,30,
+    "pear":0.20,
+    "chocolate":0.90
+    }</code></pre>
 
 </div>
 </div>
