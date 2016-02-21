@@ -20,7 +20,7 @@ Since Python 3 there is also `x` as a possible mode, which writes to a file only
 
     FileExistsError                           Traceback (most recent call last)
 
-    <ipython-input-17-73e8b8c4ffe8> in <module>()
+    <ipython-input-2-73e8b8c4ffe8> in <module>()
           1 file_to_append = open("data/inflammation-new.csv","a") # append
     ----> 2 file_to_write = open("data/inflammation-new.csv","x") # write if not existing
     
@@ -142,7 +142,7 @@ Ok, this worked just fine. But what happens if we try to write one of our proces
 
     TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-27-b1ccf2d7b74e> in <module>()
+    <ipython-input-12-b1ccf2d7b74e> in <module>()
           1 processed_line = [0.0, 0.0, 1.0]
           2 file_to_write = open("data/inflammation-new.csv","w")
     ----> 3 file_to_write.write(processed_line)
