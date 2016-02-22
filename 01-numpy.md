@@ -158,7 +158,7 @@ This is different from the way spreadsheets work.
 
 > ## Who's who in the memory {.callout}
 >
->You can use the `%whos` command at any time to see what variables you have created and what modules you have loaded into the computers memory. As this is an IPython command, it will only work if you are in an IPython terminal or the Jupyter Notebook. 
+>You can use the `%whos` command at any time to see what variables you have created and what modules you have loaded into the computers memory. As this is an IPython command, it will only work if you are in an IPython terminal or the Jupyter Notebook.
 >
 >~~~ {.python}
 >%whos
@@ -636,7 +636,7 @@ the graphs will actually be squeezed together more closely.)
 
 > ## Check your understanding {.challenge}
 >
-> Draw diagrams showing what variables refer to what values after each statement in the following program:
+> Draw a schematic drawing showing what variables refer to what values after each statement in the following program:
 >
 > ~~~ {.python}
 > mass = 47.5
