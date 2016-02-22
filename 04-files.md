@@ -24,11 +24,11 @@ while `?` matches any one character.
 We can use this to get the names of all the CSV files in the current directory:
 
 ~~~ {.python}
-print(glob.glob('data/inflammation*.csv'))
+print(glob.glob('inflammation*.csv'))
 ~~~
 
 ~~~ {.output}
-['data/inflammation-01.csv', 'data/inflammation-02.csv', 'data/inflammation-03.csv', 'data/inflammation-04.csv', 'data/inflammation-05.csv', 'data/inflammation-06.csv', 'data/inflammation-07.csv', 'data/inflammation-08.csv', 'data/inflammation-09.csv', 'data/inflammation-10.csv', 'data/inflammation-11.csv', 'data/inflammation-12.csv']
+['inflammation-01.csv', 'inflammation-02.csv', 'inflammation-03.csv', 'inflammation-04.csv', 'inflammation-05.csv', 'inflammation-06.csv', 'inflammation-07.csv', 'inflammation-08.csv', 'inflammation-09.csv', 'inflammation-10.csv', 'inflammation-11.csv', 'inflammation-12.csv']
 ~~~
 
 As these examples show,
@@ -43,7 +43,7 @@ Let's test it by analyzing the first three files in the list:
 import numpy
 import matplotlib.pyplot
 
-filenames = glob.glob('data/inflammation*.csv')
+filenames = glob.glob('inflammation*.csv')
 filenames = filenames[0:3]
 for f in filenames:
     print(f)
