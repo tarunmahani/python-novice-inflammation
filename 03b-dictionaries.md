@@ -26,7 +26,7 @@ Accessing the values of a dictionary is similar to accessing a given position in
 
     <ipython-input-2-e059547cb67b> in <module>()
     ----> 1 dictionary["eels"]
-    
+
 
     KeyError: 'eels'
 
@@ -44,18 +44,18 @@ To initialize an empty dictionary you can use `dictionary = {}`. You can use str
 
 
     example_dictionary = {}
-    
+
     example_dictionary[1.0] = "1,0"
     example_dictionary[2] = 1
     example_dictionary["list"] = ["yes","this","is","possible"]
     example_dictionary["another_dictionary?"] = {"yes":"that","works":"as well"}
-    
+
     print(example_dictionary["another_dictionary?"])
 
     {'yes': 'that', 'works': 'as well'}
 
 
-**Unlike lists, dictionaries are not ordered. So if you loop over them you are not guaranteed that they will always have the same order.** 
+**Unlike lists, dictionaries are not ordered. So if you loop over them you are not guaranteed that they will always have the same order.**
 
 By default the loop will iterate over the keys.
 
@@ -69,7 +69,7 @@ By default the loop will iterate over the keys.
     list
 
 
-Often you want to have both, the key and value at the same time. For this you can use the dictionary function `.items()`: 
+Often you want to have both, the key and value at the same time. For this you can use the dictionary function `.items()`:
 
 
     for key,value in example_dictionary.items():
@@ -91,18 +91,15 @@ Often you want to have both, the key and value at the same time. For this you ca
 shopping_list = {"banana":2,
     "apple": 4,
     "orange": 1,
-    "pear": 3
+    "pear": 3,
     "chocolate": 1}
 ```
 
 ```
 prices = { "banana":0.39,
     "apple": 0.20,
-    "orange": 0,30,
+    "orange": 0.30,
     "pear":0.20,
     "chocolate":0.90
     }
 ```
-
-
-    
