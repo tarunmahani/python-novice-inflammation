@@ -309,6 +309,21 @@ matplotlib.pyplot.show()</code></pre></div>
 <p>We will always use the syntax <code>import numpy</code> to import NumPy. However, in order to save typing, it is <a href="http://www.scipy.org/getting-started.html#an-example-script">often suggested</a> to make a shortcut like so: <code>import numpy as np</code>. If you ever see Python code online using a NumPy function with <code>np</code> (for example, <code>np.loadtxt(...)</code>), it’s because they’ve used this shortcut.</p>
 </div>
 </aside>
+
+<aside class="callout panel panel-info">
+<div class="panel-heading">
+<h2 id="deepcopy"><span class="glyphicon glyphicon-pushpin"></span>Making a deep copy from an array</h2>
+</div>
+<div class="panel-body">
+  <p>If you want to make a copy that does **not** point to another array you will have to use deepcopy, like this:</p>
+  <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">mass <span class="op">=</span> <span class="fl">47.5</span>
+ data <span class="op">=</span> numpy.array(…)
+ import copy
+ data_mod <span class="op">=</span> copy.deepcopy(data)
+ </code></pre>
+</div>
+</aside>
+
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2 id="check-your-understanding"><span class="glyphicon glyphicon-pencil"></span>Check your understanding</h2>

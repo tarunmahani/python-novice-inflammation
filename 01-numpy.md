@@ -634,6 +634,14 @@ the graphs will actually be squeezed together more closely.)
 > If you ever see Python code online using a NumPy function with `np`
 > (for example, `np.loadtxt(...)`), it's because they've used this shortcut.
 
+> ## Making a deep copy from an array {.callout}
+> If you want to make a copy that does **not** point to another array you will have to use deepcopy, like this:
+> ~~~{.python}
+> data = numpy.array(…)
+> import copy
+> data_mod = copy.deepcopy(data)
+> ~~~
+
 > ## Check your understanding {.challenge}
 >
 > Draw a schematic drawing showing what variables refer to what values after each statement in the following program:
