@@ -161,7 +161,7 @@ This is different from the way spreadsheets work.
 >You can use the `%whos` command at any time to see what variables you have created and what modules you have loaded into the computers memory. As this is an IPython command, it will only work if you are in an IPython terminal or the Jupyter Notebook. 
 >
 >~~~ {.python}
->whos
+>%whos
 >~~~
 >~~~ {.output}
 >Variable    Type       Data/Info
