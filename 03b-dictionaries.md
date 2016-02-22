@@ -83,7 +83,7 @@ Often you want to have both, the key and value at the same time. For this you ca
 
 ## Questions / Tasks
 
-* How does your dictionary look like when you fill it like this: `dictionary = {1.0 = "a", 1="b"}`?
+* How does your dictionary look like when you fill it like this: `dictionary = {1.0 : "a", 1:"b"}`?
 
 * You have two dictionaries, `shopping_list` and `prices`. Use it to calculate the total cost of your shopping trip.
 
