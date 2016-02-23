@@ -204,7 +204,9 @@ patient_a,4,5,3,0,2
 …
 ```
 
-Each patient is represented in both files, but they are not ordered. You want to merge the data for each patient from the two files into a single one and save the output.
+Each patient is represented in both files, but they are not ordered. You want to merge the data for each patient from the two files into a single one and save the output. 
+
+**The result should be a single line per patient and contain 10 values per patient**
 
 
     
